@@ -34,5 +34,9 @@ export default new Router({
       path: "/demo5",
       component: () => import("./views/broadcast-dispatch/index.vue"),
     },
+    {
+      path: "/form",
+      component: () => import("./views/Form/index.vue"),
+    },
   ],
 });

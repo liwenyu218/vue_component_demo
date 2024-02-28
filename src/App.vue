@@ -29,6 +29,11 @@
         <li>
           <router-link to="/demo5"> demo 5：broadcast&dispatch</router-link>
         </li>
+        <li>
+          <router-link to="/form">
+            practice: 带有校验功能的form组件</router-link
+          >
+        </li>
       </ul>
     </div>
     <hr />
