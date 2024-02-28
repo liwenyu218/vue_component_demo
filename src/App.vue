@@ -1,28 +1,43 @@
+<!--
+ * @Author: Liwenyu
+ * @Date: 2023-10-24 11:58:42
+ * @LastEditors: Liwenyu
+ * @LastEditTime: 2023-11-07 14:58:25
+ * @FilePath: \vue_component_advanced\src\App.vue
+ * @Description:
+ *
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <ul>
+        <li>
+          <router-link to="/"> 首页 </router-link>
+        </li>
+        <li>
+          <router-link to="/demo1"> demo 1：prop </router-link>
+        </li>
+        <li>
+          <router-link to="/demo2"> demo 2：provide&inject </router-link>
+        </li>
+        <li>
+          <router-link to="/demo3"> demo 3：provide as Vuex </router-link>
+        </li>
+        <li>
+          <router-link to="/demo4"> demo 4：emit-on</router-link>
+        </li>
+        <li>
+          <router-link to="/demo5"> demo 5：broadcast&dispatch</router-link>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+export default {};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
